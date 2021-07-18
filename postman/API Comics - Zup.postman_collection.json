@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "283763aa-067e-4680-bcd4-0e66565ff4e8",
+		"name": "API Comics - Zup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Juan\",\n  \"cpf\": \"02404626104\",\n  \"email\": \"juan@gmail.com\",\n  \"dataNascimento\": \"2000-07-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Comics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/1/cadastrar-comic/1332",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"1",
+						"cadastrar-comic",
+						"1332"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Usuário Por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/consultar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"consultar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
