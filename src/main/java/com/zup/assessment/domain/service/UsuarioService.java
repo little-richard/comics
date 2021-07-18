@@ -11,8 +11,6 @@ public interface UsuarioService {
 
     Usuario consultarPorId(Long id) throws UsuarioException, CPFException;
 
-    Usuario consultarPorIdComRegraDesconto(Long id) throws UsuarioException, CPFException;
-
     Usuario cadastrarComic(Usuario usuario, Comic comic) throws UsuarioException, CPFException;
 
 }

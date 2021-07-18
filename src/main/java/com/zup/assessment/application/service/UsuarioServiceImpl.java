@@ -24,22 +24,15 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public Usuario cadastrar(Usuario usuario) throws UsuarioException, CPFException {
 
-        return this.usuarioRepository.incluir(usuario);
+        return this.usuarioRepository.salvar(usuario);
 
     }
 
     @Override
     public Usuario consultarPorId(Long id) throws UsuarioException, CPFException {
+
         return this.usuarioRepository.consultarPorId(id);
-    }
 
-    @Override
-    public Usuario consultarPorIdComRegraDesconto(Long id) throws UsuarioException, CPFException {
-     /*   Usuario usuario = this.usuarioRepository.consultarPorId(id);
-
-        usuario.getComics().forEach();
-        return null;*/
-        return null;
     }
 
     @Override

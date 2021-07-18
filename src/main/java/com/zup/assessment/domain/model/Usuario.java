@@ -11,7 +11,7 @@ import java.util.*;
 
 @Getter
 @Setter(AccessLevel.PRIVATE)
-public class Usuario extends CPF {
+public class Usuario {
 
     private Long id;
 

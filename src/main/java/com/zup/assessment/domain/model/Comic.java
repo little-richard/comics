@@ -16,7 +16,7 @@ import java.util.Objects;
 
 @Getter
 @Setter(AccessLevel.PRIVATE)
-public class Comic extends Autor implements Serializable {
+public class Comic {
 
     private Long id;
 

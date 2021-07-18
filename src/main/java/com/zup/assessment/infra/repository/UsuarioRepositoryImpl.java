@@ -20,25 +20,11 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
     }
 
     @Override
-    public Usuario incluir(Usuario usuario) throws UsuarioException, CPFException {
-
-       return this.salvar(usuario);
-
-    }
-
-    @Override
     public Usuario consultarPorId(Long id) throws UsuarioException, CPFException {
 
         Optional<UsuarioEntity> entidade = this.usuarioJpaRepository.findById(id);
 
         return UsuarioMapper.mapToUsuarioDomainFromEntity(entidade.get());
-
-    }
-
-    @Override
-    public Usuario consultarPorCPF(Long id) {
-
-        return null;
 
     }
 
